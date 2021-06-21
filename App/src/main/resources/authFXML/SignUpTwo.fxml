@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="721.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authentication.SignUpTwoController">
+   <children>
+      <ImageView fx:id="steveImg" fitHeight="120.0" fitWidth="200.0" layoutX="93.0" layoutY="184.0" onMouseClicked="#steveImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/steve.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stratoImg" fitHeight="120.0" fitWidth="200.0" layoutX="319.0" layoutY="184.0" onMouseClicked="#stratoImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/strato.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tayImg" fitHeight="120.0" fitWidth="200.0" layoutX="93.0" layoutY="324.0" onMouseClicked="#tayImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/taylor.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="teleImg" fitHeight="120.0" fitWidth="200.0" layoutX="552.0" layoutY="324.0" onMouseClicked="#teleImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/tele.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="feAcouImg" fitHeight="120.0" fitWidth="200.0" layoutX="319.0" layoutY="324.0" onMouseClicked="#feAcouImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/acouFe.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ibAcouImg" fitHeight="120.0" fitWidth="200.0" layoutX="552.0" layoutY="184.0" onMouseClicked="#ibAcouImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/acouIba.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gibImg" fitHeight="120.0" fitWidth="200.0" layoutX="552.0" layoutY="465.0" onMouseClicked="#gibImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/gibson.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="martinImg" fitHeight="120.0" fitWidth="200.0" layoutX="319.0" layoutY="465.0" onMouseClicked="#martinImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/martin.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sonicImg" fitHeight="120.0" fitWidth="200.0" layoutX="93.0" layoutY="465.0" onMouseClicked="#sonicImgClick">
+         <image>
+            <Image url="@../SecLevelTwo/sonic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="206.0" layoutY="26.0" text="Choose guitars">
+         <font>
+            <Font name="System Bold" size="62.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="nextBtn" layoutX="316.0" layoutY="620.0" onAction="#nxtBtnClick" prefHeight="69.0" prefWidth="212.0" style="-fx-border-color: #000000;" text="Next" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <Line endX="373.0" layoutX="405.0" layoutY="153.0" startX="-345.0" strokeWidth="6.0" />
+      <Line endX="-355.5" endY="446.0" layoutX="415.0" layoutY="163.0" startX="-355.5" startY="-9.5" strokeWidth="6.0" />
+      <Line endX="373.0" layoutX="405.0" layoutY="609.0" startX="-345.0" strokeWidth="6.0" />
+      <Line endX="363.5" endY="-9.5" layoutX="415.0" layoutY="163.0" startX="363.5" startY="446.0" strokeWidth="6.0" />
+      <JFXProgressBar fx:id="progressBar" layoutX="57.0" layoutY="127.0" opacity="0.54" prefHeight="6.0" prefWidth="724.0">
+         <effect>
+            <ColorAdjust brightness="-0.7" contrast="1.0" hue="-1.0" saturation="-0.79" />
+         </effect>
+      </JFXProgressBar>
+   </children>
+</AnchorPane>

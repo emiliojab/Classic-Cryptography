@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authentication.AuthThreeController">
+   <children>
+      <Label layoutX="42.0" layoutY="30.0" text="Enter verification code sent to your email:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="codeTxt" focusColor="BLACK" layoutX="139.0" layoutY="84.0" prefHeight="25.0" prefWidth="200.0" promptText="            Verification code" style="-fx-font-style: italic; -fx-font-size: 14; -fx-text-fill: black;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="checkBtn" layoutX="173.0" layoutY="147.0" onAction="#ckeckBtnPress" prefHeight="33.0" prefWidth="132.0" text="Check Code">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="733.0" prefWidth="788.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DecryptController">
+   <children>
+      <JFXTextField fx:id="keyTxt" layoutX="108.0" layoutY="266.0" prefHeight="39.0" prefWidth="56.0" promptText="Key">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="encryptBtn" layoutX="108.0" layoutY="340.0" onAction="#Decrypt" prefHeight="53.0" prefWidth="591.0" style="-fx-border-color: #000000;" text="Decrypt">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" layoutX="691.0" layoutY="666.0" onAction="#BackBtn" prefHeight="47.0" prefWidth="83.0" style="-fx-border-color: #000000;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="300.0" layoutY="26.0" text="Decryption">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="cipherTxt" layoutX="108.0" layoutY="117.0" prefHeight="117.0" prefWidth="591.0" promptText="Enter text to decrypt ...">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="decryptedTxt" layoutX="108.0" layoutY="465.0" prefHeight="123.0" prefWidth="591.0">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextArea>
+      <Label layoutX="108.0" layoutY="438.0" text="Original text:" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
